@@ -10,14 +10,14 @@
     <nav>
         <a href="/" {{#if home}}class="active"{{/if}}>Why use bumblebee?</a>
         <a href="/how-it-works" {{#if how_it_works}}class="active"{{/if}}>How it works</a>
-        <a href="/product" class="active">Product</a>
+        <a href="/product" {{#if product}}class="active"{{/if}}>Product</a>
         <a href="/features" {{#if features}}class="active"{{/if}}>Features</a>
         <a href="/press-kit" {{#if press_kit}}class="active"{{/if}}>Press kit</a>
         <a href="/about-us" {{#if about_us}}class="active"{{/if}}>About Us</a>
     </nav>
 
     <div class="content">
-      <img src="/product.png" />
+      {{content}}
     </div>
 </body>
 </html>
